@@ -1,0 +1,77 @@
+.profpic
+{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 2px 0 0 2px;
+    border: 2px solid black;
+    display: inline-block;
+    animation: slide 4s infinite;
+    position: relative;
+    animation-direction: normal;
+    animation-timing-function: steps(1, end);
+}
+
+.sifid
+{
+    width: 74px;
+    height: 74px;
+    background-color: aqua;
+    border-radius: 50%;
+    z-index: -2;
+}
+
+
+@keyframes slide{
+    0% { top: -76px; }
+    25% { top: -76px; }
+    50% { top: 0; }
+    100% { top: 0; }
+}
+
+.container
+{
+    overflow:hidden ;
+    width: 74px;
+    height: 74px;
+}
+
+.spin
+{
+    animation-duration: 4s;
+    animation-name: spin;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border-radius: 50%;
+    position: absolute;
+    background: linear-gradient(180deg, #21db7b 80%, #db21a0 10%);
+    width: 74px;
+    z-index: -1;
+    height: 74px;
+}
+
+
+
+
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #0e0e10;
+ 	height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+

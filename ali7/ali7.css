@@ -45,7 +45,7 @@ body {
 .grad {
 	height: inherit;
 	width: inherit;
-	background: linear-gradient(180deg, #21db7b 80%, #db21a0);
+	background: linear-gradient(180deg, #21db7b 80%, #db21a0 10%);
 	position: absolute;
 }
 
